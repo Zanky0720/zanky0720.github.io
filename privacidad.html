@@ -24,7 +24,7 @@ footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1rem}
 <a class="lang" href="#en">English ↓</a>
 <p><a href="index.html">← CalenZan</a> · <a href="terminos.html">Condiciones de uso / Terms</a></p>
 <h1>Política de privacidad</h1>
-<p class="muted">Última actualización: 28 de octubre de 2026</p>
+<p class="muted">Última actualización: 2 de noviembre de 2026</p>
 
 <h2>Resumen</h2>
 <p>CalenZan («la app») es una aplicación gratuita y sin anuncios para Windows. Funciona <strong>solo en tu ordenador</strong> y se comunica directamente con Google. <strong>La persona que la desarrolla (Zanky) no recibe, no recoge y no almacena ninguno de tus datos.</strong></p>
@@ -43,6 +43,27 @@ footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1rem}
 <li>Los <strong>eventos y las tareas no se guardan en el disco</strong>: se mantienen en la memoria mientras la app está abierta.</li>
 <li>En tu ordenador se guarda, <strong>cifrada con la protección de Windows</strong>, la credencial que permite a la app seguir conectada a tu cuenta, junto con tu correo. También se guardan tus ajustes (posición, tamaño, colores, calendarios ocultos, atajo de teclado).</li>
 <li>Todo ello queda en la carpeta de datos de la app en tu usuario de Windows (<code>%APPDATA%\calenzan</code>).</li>
+</ul>
+
+<h2>Seguridad y protección de los datos</h2>
+<p>Estas son las medidas que protegen tus datos de Google:</p>
+<ul>
+<li><strong>Sin servidores ni bases de datos del desarrollador:</strong> tus datos nunca llegan a un sitio central donde pudieran acumularse o filtrarse. Van directamente entre tu ordenador y Google.</li>
+<li><strong>Conexiones cifradas:</strong> toda la comunicación con Google se hace por conexiones cifradas (HTTPS).</li>
+<li><strong>Inicio de sesión seguro:</strong> te conectas en tu navegador con el sistema estándar de Google (OAuth 2.0 con PKCE). La app nunca ve ni guarda tu contraseña de Google.</li>
+<li><strong>Credenciales cifradas en tu equipo:</strong> la credencial que mantiene la app conectada a tu cuenta se guarda cifrada con la protección de datos de Windows, vinculada a tu usuario de Windows, de modo que otros usuarios del equipo no pueden usarla.</li>
+<li><strong>Mínimo almacenamiento:</strong> tus eventos y tareas solo existen en la memoria del programa mientras está abierto; la app no guarda copia de ellos en el disco.</li>
+<li><strong>Aislamiento:</strong> la app usa las medidas de aislamiento de Electron (aislamiento de contexto y política de seguridad de contenido) para limitar lo que puede hacer el contenido de sus ventanas.</li>
+<li><strong>Permisos mínimos:</strong> solo se piden los permisos de Google necesarios para las funciones descritas arriba.</li>
+<li><strong>Si se detecta un problema de seguridad,</strong> se publicará una versión corregida lo antes posible y se avisará en esta web.</li>
+</ul>
+<p>Además, te recomendamos proteger tu ordenador con una contraseña de Windows, mantenerlo actualizado y, si es posible, cifrar el disco.</p>
+
+<h2>Conservación y eliminación de los datos</h2>
+<ul>
+<li><strong>El desarrollador no conserva ningún dato tuyo,</strong> porque no los recibe. No hace falta pedirle que borre nada.</li>
+<li><strong>Eventos y tareas:</strong> se mantienen solo en memoria y desaparecen al cerrar la app.</li>
+<li><strong>Credencial y ajustes:</strong> se conservan en tu ordenador hasta que quites la cuenta en la app (⚙ → Cuentas de Google → Quitar), retires el acceso en tu cuenta de Google o borres la carpeta de datos de la app. Si desinstalas la app, esa carpeta puede quedar en tu usuario de Windows y puedes borrarla a mano.</li>
 </ul>
 
 <h2>Con quién se comparten</h2>
@@ -67,7 +88,7 @@ footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1rem}
 <hr id="en" style="margin:3rem 0;border:0;border-top:1px solid var(--line)">
 
 <h1>Privacy policy <span class="muted" style="font-size:1rem">(English)</span></h1>
-<p class="muted">Last updated: October 28, 2026</p>
+<p class="muted">Last updated: November 2, 2026</p>
 
 <h2>Summary</h2>
 <p>CalenZan (the “app”) is a free, ad-free Windows application. It runs <strong>only on your computer</strong> and talks directly to Google. <strong>The developer (Zanky) does not receive, collect or store any of your data.</strong></p>
@@ -88,6 +109,27 @@ footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1rem}
 
 <h2>Sharing</h2>
 <p>None. The app uses no developer servers, no analytics and no advertising. It does not sell or transfer data, and does not use your data to train AI or machine-learning models. Its only network connections are to Google services (sign-in, Google Calendar and Google Tasks) and, unless you turn it off in ⚙ → Updates, to GitHub to check whether a new version is available. That check sends no data about you or your Google account; GitHub, like any website, can see your IP address.</p>
+
+<h2>Security and data protection</h2>
+<p>These are the measures that protect your Google data:</p>
+<ul>
+<li><strong>No developer servers or databases:</strong> your data never reaches a central place where it could accumulate or leak. It goes directly between your computer and Google.</li>
+<li><strong>Encrypted connections:</strong> all communication with Google uses encrypted connections (HTTPS).</li>
+<li><strong>Secure sign-in:</strong> you sign in through your browser using Google’s standard flow (OAuth 2.0 with PKCE). The app never sees or stores your Google password.</li>
+<li><strong>Encrypted credentials on your device:</strong> the credential that keeps the app connected to your account is stored encrypted with Windows data protection, tied to your Windows user, so other users of the computer cannot use it.</li>
+<li><strong>Minimal storage:</strong> your events and tasks exist only in the program’s memory while it is open; the app does not keep a copy on disk.</li>
+<li><strong>Isolation:</strong> the app uses Electron’s isolation features (context isolation and a content security policy) to limit what the content of its windows can do.</li>
+<li><strong>Minimum permissions:</strong> only the Google permissions needed for the features described above are requested.</li>
+<li><strong>If a security problem is found,</strong> a fixed version will be released as soon as possible and announced on this website.</li>
+</ul>
+<p>We also recommend protecting your computer with a Windows password, keeping it up to date and, if possible, encrypting the disk.</p>
+
+<h2>Data retention and deletion</h2>
+<ul>
+<li><strong>The developer retains none of your data,</strong> because it is never received. There is nothing to ask the developer to delete.</li>
+<li><strong>Events and tasks:</strong> kept in memory only and discarded when you close the app.</li>
+<li><strong>Credential and settings:</strong> kept on your computer until you remove the account in the app (⚙ → Google accounts → Remove), revoke access in your Google account, or delete the app’s data folder. If you uninstall the app, that folder may remain in your Windows profile and you can delete it manually.</li>
+</ul>
 
 <h2>Google API Services User Data Policy</h2>
 <p>CalenZan’s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
